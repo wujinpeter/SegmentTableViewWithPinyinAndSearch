@@ -1,0 +1,32 @@
+//
+//  UserTableView.pch
+//  UserTableView
+//
+//  Created by Created by wujin on 16-12-25.
+//
+
+#ifndef UserTableView_UserTableView_pch
+#define UserTableView_UserTableView_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define NT_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define NT_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+
+#define IOS_7_LATER [[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0
+
+#define StateBarHeight ((IOS_7_LATER)?20:0)
+#define navigationBarHeight ((IOS_7_LATER)?44+20:44)
+
+#define mainHeight     NT_SCREEN_HEIGHT
+#define mainWidth      NT_SCREEN_WIDTH
+#define navBarHeight   navigationBarHeight
+
+
+
+#define mainColor        [UIColor colorWithRed:0xff/255. green:0x66/255. blue:0/255. alpha:1.]
+
+
+#endif
